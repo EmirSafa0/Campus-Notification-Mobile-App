@@ -161,29 +161,17 @@ Uygulama katmanlı mimari yaklaşımı ile geliştirilmiştir.
 
 ## 🖼️ Uygulama Ekran Görüntüleri
 
-### 🔐 Giriş Ekranı
+<p align="center">
+  <img src="screenshots/login_screen.jpeg" width="220"/>
+  <img src="screenshots/home_screen.jpeg" width="220"/>
+  <img src="screenshots/admin_panel.jpeg" width="220"/>
+</p>
 
-![Login](screenshots/login_screen.jpeg)
-
-### 🏠 Ana Sayfa
-
-![Home](screenshots/home_screen.jpeg)
-
-### ⚙️ Admin Paneli
-
-![Admin](screenshots/admin_panel.jpeg)
-
-### 👤 Profil
-
-![Profile](screenshots/profile_screen.jpeg)
-
-### 📋 Bildirimler
-
-![Notifications](screenshots/notifications_list.jpeg)
-
-### 🚨 Acil Durumlar
-
-![Emergency](screenshots/emergency_screen.jpeg)
+<p align="center">
+  <img src="screenshots/profile_screen.jpeg" width="220"/>
+  <img src="screenshots/notifications_list.jpeg" width="220"/>
+  <img src="screenshots/emergency_screen.jpeg" width="220"/>
+</p>
 
 ---
 
