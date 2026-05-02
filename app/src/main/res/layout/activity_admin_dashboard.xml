@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 🔶 ÜST BAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/burgundy"
+            android:gravity="center_vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/btnBackAdminDashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geri"
+                android:textSize="22sp"
+                android:textColor="@color/text_white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yönetim Paneli"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/text_white"
+                android:gravity="center" />
+        </LinearLayout>
+
+
+        <!-- 🔶 SAYIM BLOKLARI -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/txtTotalReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toplam Bildirim: 0"
+                android:textStyle="bold"
+                android:textColor="@color/burgundy"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtPendingReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bekleyen Bildirim: 0"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/txtSolvedReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Çözülen Bildirim: 0"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/txtAnnouncementCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acil Durum: 0"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+
+        <!-- 🔶 Yönetim Kartları -->
+        <LinearLayout
+            android:id="@+id/cardManageReports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/card_bg"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tüm Bildirimleri Yönet"
+                android:textStyle="bold"
+                android:textColor="@color/burgundy"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kampüsteki tüm güvenlik bildirimlerini incele ve durum güncelle."
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cardManageAnnouncements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/card_bg"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acil Durumları Yönet"
+                android:textStyle="bold"
+                android:textColor="@color/burgundy"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acil Durum ekle, düzenle veya sil."
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cardAddAnnouncement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/card_bg"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acil Durum Ekle"
+                android:textStyle="bold"
+                android:textColor="@color/burgundy"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <!-- ÇIKIŞ -->
+        <Button
+            android:id="@+id/btnAdminLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Çıkış Yap"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:background="@drawable/burgundy_button"
+            android:layout_marginTop="30dp"
+            android:padding="14dp" />
+
+    </LinearLayout>
+</ScrollView>

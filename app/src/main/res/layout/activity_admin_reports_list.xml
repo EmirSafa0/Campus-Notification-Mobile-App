@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- Üst bar: geri butonu ve ekran başlığı -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/burgundy"
+        android:gravity="center_vertical"
+        android:padding="12dp">
+
+        <!-- Geri butonu -->
+        <TextView
+            android:id="@+id/btnBackAdminReports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geri"
+            android:textColor="@color/text_white"
+            android:textSize="22sp"/>
+
+        <!-- Sayfa başlığı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tüm Bildirimler (Admin)"
+            android:textColor="@color/text_white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+    <!-- Bildirimler içinde metin bazlı arama alanı -->
+    <EditText
+        android:id="@+id/etSearchAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Ara..."
+        android:background="@drawable/search_box"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary" />
+
+    <!-- Filtre başlığı: seçili durum ve açılır menü oku -->
+    <LinearLayout
+        android:id="@+id/layoutFilterHeaderAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/card_bg"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:layout_marginTop="12dp"
+        android:elevation="4dp">
+
+        <!-- Seçili filtre durumu -->
+        <TextView
+            android:id="@+id/txtFilterSelectedAdmin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tümü"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+
+        <!-- Açılır menü oku -->
+        <ImageView
+            android:id="@+id/imgFilterArrowAdmin"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_arrow_down"
+            android:tint="@color/icon_burgundy" />
+    </LinearLayout>
+
+    <!-- Filtre seçeneklerinin yer aldığı açılır menü -->
+    <LinearLayout
+        android:id="@+id/layoutFilterOptionsAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        android:padding="10dp"
+        android:layout_marginTop="4dp"
+        android:elevation="4dp"
+        android:visibility="gone">
+
+        <!-- Tüm bildirimler -->
+        <TextView
+            android:id="@+id/optionAllAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:text="Tümü"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+
+        <!-- Açık durumundaki bildirimler -->
+        <TextView
+            android:id="@+id/optionOpenAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:text="Açık"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+
+        <!-- İnceleniyor durumundaki bildirimler -->
+        <TextView
+            android:id="@+id/optionPendingAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:text="İnceleniyor"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+
+        <!-- Çözüldü durumundaki bildirimler -->
+        <TextView
+            android:id="@+id/optionSolvedAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:text="Çözüldü"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+    </LinearLayout>
+
+    <!-- Admin için tüm bildirimlerin listelendiği RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAdminReports"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

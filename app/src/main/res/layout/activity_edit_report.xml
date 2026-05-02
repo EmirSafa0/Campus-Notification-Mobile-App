@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:fillViewport="true">
+
+    <!-- Sayfanın ana dikey yerleşimi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Üst bar: geri butonu ve ekran başlığı -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/burgundy"
+            android:gravity="center_vertical"
+            android:padding="16dp">
+
+            <!-- Geri butonu -->
+            <TextView
+                android:id="@+id/btnBackEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geri"
+                android:textColor="@color/text_white"
+                android:textSize="16sp" />
+
+            <!-- Sayfa başlığı -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bildirimi Düzenle"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Bildirim düzenleme formu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_bg"
+            android:layout_marginTop="18dp">
+
+            <!-- Bildirim başlığı -->
+            <EditText
+                android:id="@+id/etReportTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Başlık"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text" />
+
+            <!-- Bildirim açıklaması -->
+            <EditText
+                android:id="@+id/etReportDescription"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:hint="Açıklama"
+                android:gravity="top|start"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:drawable/edit_text" />
+
+            <!-- Bildirim kategorisi -->
+            <Spinner
+                android:id="@+id/spReportCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+
+        <!-- Harita üzerinden konum seçme alanı -->
+        <LinearLayout
+            android:id="@+id/btnPickLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/burgundy_button"
+            android:padding="14dp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Haritada Konum Seç"
+                android:textColor="@color/text_white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Seçilen konum bilgisinin gösterildiği alan -->
+        <EditText
+            android:id="@+id/etReportLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Seçilen konum"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="8dp" />
+
+        <!-- Bildirimi kaydetme butonu -->
+        <Button
+            android:id="@+id/btnSaveReport"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Kaydet"
+            android:textColor="@color/text_white"
+            android:background="@drawable/burgundy_button"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>

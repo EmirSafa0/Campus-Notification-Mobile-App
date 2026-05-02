@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_background">
+
+    <!-- ÜST BAR
+         Geri butonu ve sayfa başlığını içerir -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/burgundy"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="14dp">
+
+        <!-- Geri dönme butonu -->
+        <TextView
+            android:id="@+id/btnBackProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geri"
+            android:textColor="@color/text_white"
+            android:textSize="18sp" />
+
+        <!-- Sayfa başlığı -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profil"
+            android:textColor="@color/text_white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- SCROLL ALANI
+         İçerik uzadığında kaydırma sağlar -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Sayfanın ana içeriği -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- PROFİL KARTI
+                 Kullanıcı bilgilerini gösterir -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Kullanıcı adı -->
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!-- Kullanıcı email -->
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!-- Kullanıcı rolü -->
+                    <TextView
+                        android:id="@+id/txtRole"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!-- Kullanıcının birimi / departmanı -->
+                    <TextView
+                        android:id="@+id/txtDepartment"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- TAKİP EDİLEN BİLDİRİMLER BAŞLIĞI -->
+            <TextView
+                android:text="Takip Edilen Bildirimler"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- BOŞ DURUM
+                 Kullanıcı hiç bildirim takip etmiyorsa gösterilir -->
+            <TextView
+                android:id="@+id/txtNoFollowed"
+                android:text="Henüz takip edilen bir bildirim yok."
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- TAKİP EDİLEN BİLDİRİMLER LİSTESİ
+                 Veri varsa görünür hale getirilir -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerFollowedReports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <!-- ÇIKIŞ BUTONU
+                 Kullanıcı oturumunu sonlandırır -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:text="Çıkış Yap"
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/burgundy"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

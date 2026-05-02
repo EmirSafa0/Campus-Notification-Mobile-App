@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ===== ÜST BAR ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/burgundy"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Acil Durum Bildirimi Oluştur"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btnBackAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kapat"
+                android:textColor="@color/text_white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- ===== FORM KARTI ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="20dp"
+            android:layout_margin="20dp">
+
+            <!-- BAŞLIK -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acil Durum Başlığı"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"
+                android:hint="Örn: Yangın Alarmı – A Blok"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"/>
+
+            <!-- AÇIKLAMA -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acil Durum Açıklaması"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@android:drawable/edit_text"
+                android:gravity="top|start"
+                android:padding="12dp"
+                android:hint="Acil durumla ilgili detayları buraya yazın..."
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:inputType="textMultiLine"
+                android:maxLines="6" />
+
+            <!-- YAYINLA -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPublish"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Acil Durumu Yayınla"
+                android:textColor="@color/text_white"
+                android:background="@drawable/burgundy_button"
+                android:backgroundTint="@null"
+                android:layout_marginTop="28dp"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+
+    android:foreground="?attr/selectableItemBackground"
+    card_view:cardCornerRadius="14dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="false"
+    card_view:cardBackgroundColor="@color/white">
+
+    <!-- Bildirim kartının ana yatay yerleşimi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <!-- Bildirimi temsil eden sol ikon -->
+        <ImageView
+            android:id="@+id/imgReportIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_location"
+            android:padding="6dp"
+            android:tint="@color/burgundy" />
+
+        <!-- Başlık, açıklama ve tarih bilgisini içeren metin alanı -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <!-- Bildirim başlığı -->
+            <TextView
+                android:id="@+id/txtReportTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Başlık"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <!-- Bildirim açıklamasının kısa özeti -->
+            <TextView
+                android:id="@+id/txtReportDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Bildirim açıklaması burada görünecek"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Bildirimin oluşturulma tarihi -->
+            <TextView
+                android:id="@+id/txtReportDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="12.12.2025 13:02"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Bildirimin durumunu gösteren etiket -->
+        <TextView
+            android:id="@+id/txtReportStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Açık"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:background="@drawable/status_badge"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

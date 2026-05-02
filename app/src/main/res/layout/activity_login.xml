@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- LOGO -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/communication_icon"
+            android:scaleType="centerInside" />
+
+        <!-- BAŞLIK -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kampüs Bildirimleri"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/burgundy"
+            android:layout_marginTop="12dp" />
+
+        <!-- FORM KARTI -->
+        <LinearLayout
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:clipToOutline="true"
+            android:elevation="6dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:text="Giriş Yap"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- E-POSTA -->
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/search_box"
+                android:hint="E-posta"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:inputType="textEmailAddress"
+                android:padding="12dp" />
+
+            <!-- ŞİFRE -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/search_box"
+                android:hint="Şifre"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:inputType="textPassword"
+                android:padding="12dp" />
+
+            <!-- HATA MESAJI -->
+            <TextView
+                android:id="@+id/tvError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/burgundy_dark"
+                android:visibility="gone" />
+
+            <!-- GİRİŞ YAP BUTONU -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/burgundy_button"
+                android:backgroundTint="@null"
+                android:stateListAnimator="@null"
+                android:text="Giriş Yap"
+                android:textAllCaps="false"
+                android:textColor="@color/text_white"
+                android:textSize="16sp" />
+
+            <!-- KAYIT OL -->
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Hesabın yok mu? Kayıt ol"
+                android:textColor="@color/burgundy"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- SIFREMI UNUTTUM-->
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Şifremi Unuttum"
+                android:textColor="@color/burgundy"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

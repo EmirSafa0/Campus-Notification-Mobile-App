@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ÜST BAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/burgundy"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <TextView
+                android:id="@+id/btnBackEmergencyDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geri"
+                android:textColor="@color/text_white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Acil Durum Detayı"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- KART -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/card_bg"
+            android:padding="18dp"
+            android:orientation="vertical">
+
+            <!-- BAŞLIK -->
+            <TextView
+                android:id="@+id/txtEmergencyTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Başlık"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/burgundy" />
+
+            <!-- TARİH -->
+            <TextView
+                android:id="@+id/txtEmergencyDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tarih"
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="6dp" />
+
+            <!-- AÇIKLAMA -->
+            <TextView
+                android:id="@+id/txtEmergencyDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Açıklama"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="14dp" />
+        </LinearLayout>
+
+        <!-- ADMIN BUTONLARI (SADECE ADMIN GÖRECEK) -->
+        <LinearLayout
+            android:id="@+id/layoutEmergencyAdminButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btnEmergencyEdit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Düzenle"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:background="@drawable/burgundy_button" />
+
+            <Button
+                android:id="@+id/btnEmergencyClose"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:text="Acil Durumu Kapat"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:background="@drawable/burgundy_button" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

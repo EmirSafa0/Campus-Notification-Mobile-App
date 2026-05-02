@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary Burgundy (Buttons, AppBar, Status badges) -->
+    <color name="burgundy">#93022E</color>
+
+    <!-- Dark Burgundy (Pressed state, Ripple alternative) -->
+    <color name="burgundy_dark">#6C0222</color>
+
+    <!-- Light Burgundy (Cards, soft backgrounds, accents) -->
+    <color name="burgundy_light">#F3D9DF</color>
+
+    <!-- Primary text (dark near-black) -->
+    <color name="text_primary">#FF000000</color>
+
+    <!-- Secondary / subtitle text -->
+    <color name="text_secondary">#88000000</color>
+
+    <!-- White text (buttons, appbar, badges) -->
+    <color name="text_white">#FFFFFFFF</color>
+
+    <!-- App background (soft warm tone) -->
+    <color name="app_background">#FFF4E6</color>
+
+    <!-- Card border color -->
+    <color name="card_border">#DDDDDD</color>
+
+    <!-- Very soft background for cards / search box -->
+    <color name="soft_background">#FFF5F7</color>
+
+    <color name="icon_burgundy">#93022E</color>
+
+    <color name="white">#FFFFFFFF</color>
+
+</resources>

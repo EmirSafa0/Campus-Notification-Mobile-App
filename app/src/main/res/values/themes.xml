@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.KampusBildirimleri" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Uygulama arka plan rengi -->
+        <item name="android:colorBackground">@color/app_background</item>
+        <item name="colorSurface">@color/app_background</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- TOOLBAR – Burgundy -->
+        <item name="colorPrimary">@color/burgundy</item>
+        <item name="colorOnPrimary">@color/text_white</item>
+
+        <!-- M3'un mor tonlarını %100 kapat -->
+        <item name="materialButtonStyle">@style/CustomButtonStyle</item>
+        <item name="android:buttonStyle">@style/CustomButtonStyle</item>
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+
+        <!-- Ripple tamamen kapalı -->
+        <item name="android:colorControlHighlight">@android:color/transparent</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
+
+    </style>
+
+    <style name="Theme.KampusBildirimleri" parent="Base.Theme.KampusBildirimleri" />
+
+    <style name="CustomButtonStyle" parent="Widget.Material3.Button">
+
+        <!-- Material 3 tint'i tamamen iptal -->
+        <item name="backgroundTint">@null</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="backgroundTintMode">src_over</item>
+
+        <!-- Ripple yok -->
+        <item name="rippleColor">@android:color/transparent</item>
+
+        <!-- Arka plan (DRAWABLE) -->
+        <item name="android:background">@drawable/burgundy_button</item>
+
+        <!-- Yazı rengi -->
+        <item name="android:textColor">@color/text_white</item>
+
+        <!-- Büyük harf yok -->
+        <item name="android:textAllCaps">false</item>
+
+        <!-- Padding -->
+        <item name="android:padding">12dp</item>
+
+    </style>
+
+</resources>

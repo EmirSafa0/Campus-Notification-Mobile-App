@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:fillViewport="true">
+
+    <!-- Sayfanın ana dikey yerleşimi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Üst bar: geri butonu ve ekran başlığı -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/burgundy"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <!-- Geri butonu -->
+            <TextView
+                android:id="@+id/btnBackDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geri"
+                android:textColor="@color/text_white"
+                android:textSize="17sp"/>
+
+            <!-- Sayfa başlığı -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bildirim Detayı"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Bildirim başlığı -->
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Başlık"
+            android:textColor="@color/burgundy"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Bildirim kategorisi -->
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Bildirim açıklaması -->
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Açıklama"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Bildirim konumu -->
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Konum"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Bildirim durumu -->
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Durum"
+            android:textColor="@color/burgundy_dark"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Bildirim tarihi -->
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tarih"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Bildirime ait fotoğraf -->
+        <ImageView
+            android:id="@+id/imgPhotoReport"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:background="@color/card_border"
+            android:layout_marginTop="14dp"
+            android:contentDescription="Bildirim Fotoğrafı"/>
+
+        <!-- Bildirimin konumunu gösteren mini harita -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="18dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <fragment
+                android:id="@+id/miniMap"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Harita kullanım bilgisi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Haritaya dokunarak büyütebilirsiniz"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="6dp"/>
+
+        <!-- Bildirimi düzenleme butonu -->
+        <Button
+            android:id="@+id/btnEditReport"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Bildirimi Düzenle"
+            android:textColor="@color/text_white"
+            android:background="@drawable/burgundy_button"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+        <!-- Admin ve takip işlemleri için buton grubu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <!-- İnceleniyor durumu -->
+            <Button
+                android:id="@+id/btnSetPending"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="İnceleniyor"
+                android:textColor="@color/text_white"
+                android:background="@drawable/burgundy_button"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <!-- Çözüldü durumu -->
+            <Button
+                android:id="@+id/btnSetSolved"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Çözüldü"
+                android:textColor="@color/text_white"
+                android:background="@drawable/burgundy_button"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <!-- Açık durumu -->
+            <Button
+                android:id="@+id/btnSetOpen"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Açık"
+                android:textColor="@color/text_white"
+                android:background="@drawable/burgundy_button"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <!-- Bildirimi takip etme butonu -->
+            <Button
+                android:id="@+id/btnFollowReport"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Takip Et"
+                android:textColor="@color/text_white"
+                android:background="@drawable/burgundy_button"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Bildirimi silme butonu -->
+            <Button
+                android:id="@+id/btnDeleteReport"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Bildirimi Sil"
+                android:textColor="@color/text_white"
+                android:background="@drawable/burgundy_button"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

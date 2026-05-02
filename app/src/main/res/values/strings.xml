@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- App -->
+    <string name="app_name">Kampüs Bildirimleri</string>
+
+    <!-- Login -->
+    <string name="login_title">Giriş Yap</string>
+    <string name="email">E-posta</string>
+    <string name="password">Şifre</string>
+    <string name="login_button">Giriş Yap</string>
+    <string name="register_redirect">Hesabın yok mu? Kayıt ol</string>
+    <string name="forgot_password">Şifremi Unuttum</string>
+
+    <!-- Forgot Password -->
+    <string name="forgot_title">Şifre Sıfırlama</string>
+    <string name="forgot_info">Kayıtlı e-posta adresinizi yazın. Size şifre sıfırlama bağlantısı göndereceğiz.</string>
+    <string name="forgot_send_link">Bağlantıyı Gönder</string>
+    <string name="back_arrow">←</string>
+
+    <!-- Register -->
+    <string name="register_title">Kayıt Ol</string>
+    <string name="full_name">Ad Soyad</string>
+    <string name="unit">Birim (Fakülte/Bölüm)</string>
+    <string name="register_button">Kayıt Ol</string>
+
+    <!-- Main -->
+    <string name="main_title">Kampüs Bildirimleri</string>
+    <string name="home_title">Ana Sayfa</string>
+    <string name="home_description">Kampüsle ilgili bildirim ve güvenlik işlemlerine buradan erişebilirsin.</string>
+    <string name="announcements_title">Duyurular</string>
+    <string name="announcements_desc">Kampüs genelindeki duyuruları görüntüle.</string>
+    <string name="profile_title">Profilim</string>
+    <string name="profile_desc">Hesap ayarları ve bilgiler.</string>
+    <string name="my_reports_title">Bildirdiğim Durumlar</string>
+    <string name="my_reports_desc">Göndermiş olduğun güvenlik bildirimlerini görüntüle.</string>
+    <string name="public_reports_title">Kampüsteki Güvenlik Bildirimleri</string>
+    <string name="campus_map_title">Kampüs Haritası</string>
+    <string name="campus_map_desc">Sağlık ve güvenlik noktalarını harita üzerinde görüntüle.</string>
+    <string name="logout">Çıkış Yap</string>
+
+    <!-- Profile -->
+    <string name="profile_page">Profil Sayfası</string>
+    <string name="profile_email">E-posta</string>
+    <string name="profile_unit">Birim</string>
+
+    <!-- Reports & Emergency Counters -->
+    <string name="total_reports">Toplam Bildirim: %1$d</string>
+    <string name="pending_reports">Bekleyen Bildirim: %1$d</string>
+    <string name="solved_reports">Çözülen Bildirim: %1$d</string>
+    <string name="total_announcements">Toplam Acil Durum: %1$d</string>
+
+    <!-- Genel -->
+    <string name="back">Geri</string>
+    <string name="search">Ara...</string>
+
+    <!-- Rapor ekranı -->
+    <string name="my_reports">Bildirimlerim</string>
+    <string name="filter_all">Tümü</string>
+
+    <!-- Durumlar -->
+    <string name="status_open">Açık</string>
+    <string name="status_pending">İnceleniyor</string>
+    <string name="status_solved">Çözüldü</string>
+</resources>

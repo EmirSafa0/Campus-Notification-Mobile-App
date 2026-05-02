@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/app_background">
+
+    <!-- GERİ BUTONU -->
+    <TextView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Geri"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/burgundy"
+        android:padding="8dp" />
+
+    <!-- BAŞLIK -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Database İzleme Paneli"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/burgundy"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <!-- YÖNLENDİRME BUTONLARI -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnUsers"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:text="Kullanıcılar"
+            style="@style/CustomButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnAnnouncements"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Acil Durumlar"
+            style="@style/CustomButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnReports"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:text="Bildirimler"
+            style="@style/CustomButtonStyle"/>
+    </LinearLayout>
+
+    <!-- VERİ LİSTESİ -->
+    <ListView
+        android:id="@+id/listData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:divider="@color/burgundy_light"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
