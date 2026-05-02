@@ -221,7 +221,7 @@ git clone https://github.com/EmirSafa0/Campus-Notification-Mobile-App.git
 
 ## 👨‍💻 Geliştirici
 
-**Emir Safa Kaymakçı**
+**Emir Safa KAYMAKÇI**
 
 ---
 
