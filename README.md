@@ -162,15 +162,25 @@ Uygulama katmanlı mimari yaklaşımı ile geliştirilmiştir.
 ## 🖼️ Uygulama Ekran Görüntüleri
 
 <p align="center">
-  <img src="screenshots/login_screen.jpeg" width="220"/>
-  <img src="screenshots/home_screen.jpeg" width="220"/>
-  <img src="screenshots/admin_panel.jpeg" width="220"/>
+  <img src="screenshots/login_screen.jpeg" width="200"/>
+  <img src="screenshots/home_screen.jpeg" width="200"/>
+  <img src="screenshots/admin_panel.jpeg" width="200"/>
+</p>
+<p align="center">
+  <b>Giriş Ekranı</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Ana Sayfa</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Admin Paneli</b>
 </p>
 
 <p align="center">
-  <img src="screenshots/profile_screen.jpeg" width="220"/>
-  <img src="screenshots/notifications_list.jpeg" width="220"/>
-  <img src="screenshots/emergency_screen.jpeg" width="220"/>
+  <img src="screenshots/profile_screen.jpeg" width="200"/>
+  <img src="screenshots/notifications_list.jpeg" width="200"/>
+  <img src="screenshots/emergency_screen.jpeg" width="200"/>
+</p>
+<p align="center">
+  <b>Profil</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Bildirimler</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Acil Durumlar</b>
 </p>
 
 ---
